@@ -1,0 +1,63 @@
+npm init        ==>     initialises npm package
+npm init --yes  ==>     create package with default values
+npm config set init-author-name     ==>     set a default author "name"
+npm set init-license     ==>     set a default license "value"
+(config can be omitted) 
+npm config get init-author-name     ==>     get the author
+npm get init-license     ==>     get the license
+
+npm config delete init-author-name     ==>     delete the author
+npm config delete init-license     ==>     delete the license
+
+npm install packageName     ==>     to install a package
+npm install packageName --save     ==>     to install a package and save as dependencies
+npm install packageName --save-dev     ==>     to install a package and save as devDependencies
+
+npm uninstall packageName   ==>     uninstall package
+npm uninstall packageName --save  ==>     uninstall package also remove the entries
+npm uninstall packageName --save-dev  ==>     uninstall package also remove the devDependencies
+
+
+npm install packageName -g     ==>     to install a package globally
+npm uninstall packageName -g     ==>     to uninstall a package globally
+
+npm list    ==>     list all the package installed locally
+npm list --depth 0    ==>     list all the package installed locally and not the dependencies
+
+npm list --global true --depth 0     ==>        list the packages installed globally
+
+semantic versioning ==>
+
+ex=>
+
+    "lodash": "4.16.1"
+here,
+    4 : major version number (break the existing functionality)
+    16 : minor version number (a new feature but it does not break the functionality)
+    1 : patch version number (bug fix, performance improvement)
+
+npm install lodash@3.3.0 --save ==>     install lodash 3.3.0 version
+npm install lodash@4.14 --save ==>     install lodash 4.14 version (but the latest patch version)
+npm install lodash@4 --save ==>     install lodash 4. version (but the latest minor version and patch version)
+
+npm update packageName      ==>     update the package to latest version
+npm update --dev --save-dev      ==>     update the devDependencies to latest version
+npm update ==> update all the dependencies and the devDependencies
+npm update -g packageName   ==>     update the package globally
+npm install npm@latest -g 
+
+npm prune   ==>     remove all the extraneous packages from project folder
+
+
+
+shorthand ::
+
+--yes        :  -y
+install      :   i
+--save       :  -S
+--save-dev   :  -D
+--global     :  -g
+--version    :  -v
+
+visit for more:
+docs.npmjs.com/misc/config
